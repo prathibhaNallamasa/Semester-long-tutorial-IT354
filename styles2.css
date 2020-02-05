@@ -93,3 +93,7 @@ a:hover {
   .tutorial,.full-width{
       padding: 40px;
   }
+  .video-tutorial{
+      position: relative;
+      align-items: center;
+  }
