@@ -1,0 +1,95 @@
+li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline;
+    padding-right: 0.9em;
+    padding-left: 0.9em;
+    border-right: 1px solid #009;
+    text-decoration: none;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 15px;
+    line-height: 1.5; 
+  }
+ 
+         
+    
+    .site-navbar .site-logo {
+      font-size: 1.5rem; }
+      .site-navbar .site-logo a {
+        display: inline-block;
+        padding: 5px 10px;
+        color: rgb(124, 6, 153) !important; }
+
+        .site-blocks-cover {
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: top;
+            background-position: center center;
+            overflow: hidden;
+            position: relative;
+        padding: 40px; }
+
+            .site-blocks-cover.overlay {
+                position: relative; }
+                .site-blocks-cover.overlay:before {
+                  position: absolute;
+                  content: "";
+                  left: 0;
+                  bottom: 0;
+                  right: 0;
+                  top: 0;
+                  z-index: 2;
+                     background: rgba(255, 255, 255, 0); }
+       
+body{
+    background-image: url(images/pink.jfif);
+    background-size:cover ;
+   
+}   
+p,h1,h3{
+    text-align: center;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+
+letter-spacing: 2px;
+word-spacing: 2px;
+color: #000000;
+font-weight: normal;
+text-decoration: none;
+font-style: italic;
+font-variant: normal;
+text-transform: none;
+}               
+a:hover {
+    text-decoration: underline;
+  }
+  
+  a:active {
+    text-decoration: underline;
+  }
+  a:link {
+    color: rgba(7, 83, 248, 0.658);
+  }
+  
+  /* visited link */
+  a:visited {
+    color: rgb(2, 78, 2);
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: hotpink;
+  }
+  
+  /* selected link */
+  a:active {
+    color: rgb(132, 0, 255);
+  }      
+  .firstWebsite{
+      background-image: url(images/blush.jpg);
+      background-size: cover ;
+  }
+  .tutorial,.full-width{
+      padding: 40px;
+  }
