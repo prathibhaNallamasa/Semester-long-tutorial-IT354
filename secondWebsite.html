@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+    
+</head>
+<body>
+    <div class="site-wrap">
+
+        <div class="site-mobile-menu site-navbar-target">
+          <div class="site-mobile-menu-header">
+            <div class="site-mobile-menu-close mt-3">
+              <span class="icon-close2 js-menu-toggle"></span>
+            </div>
+          </div>
+          <div class="site-mobile-menu-body"></div>
+        </div>
+        <header class="site-navbar py-4 js-sticky-header site-navbar-target" role="banner">
+
+            <div class="container-fluid">
+            <div class="row align-items-center justify-content-center">
+              
+                
+                  <nav class="site-navigation position-relative text-right" role="navigation">
+                    <h1 class="m-0 site-logo"><a href="index.html">Prathibha Nallamasa</a></h1>
+                    <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
+                      <li><a href="index.html" >Home</a></li>
+                      <li><a href="firstWebsite.html" >First Website</a></li>
+                      <li><a href="firstVideo.html" >First Video</a></li>
+
+                  
+                        <li><a href="secondWebsite.html" class="nav-link">Second Website</a></li>
+                        <li><a href="secondVideo.html" class="nav-link">Second Video</a></li>
+                        <li><a href="secondArticle.html" class="nav-link">Second Article</a></li>
+                      </ul>
+                    </nav>
+                  <div class="d-inline-block d-lg-none" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle float-right"><span class="icon-menu h3"></span></a></div>
+
+                </div>
+            </div>
+       
+        
+            
+        </header>
+       <div>
+           <h2>Functions</h2>
+           <h3>Named Functions</h3>
+           <p>
+              Named functions are nothing but the functions which have names.
+              Named functions can be used while declaring the functions or even used in the function expressions.
+              <br>
+           </p>
+           <pre>
+               <code>
+                   function product(a,b)
+                   {
+                      c = a * b ;
+                       console.log("the product of the two numbers is" , c)
+                   }
+                   console.log(product(6,7))
+
+                   // returns --- the product of the two numbers is 42
+               </code>
+           </pre>
+           </div>
+        <div>
+            <h3>Function Expressions</h3>
+            <p>
+                A function can be declared using a function expression.
+                In this method, the function is assigned to a variable like var a = function(a,b){ return a+b;
+                }
+                The function can be called using the assigned variable.<br>
+            </p>
+            <pre>
+                <code>
+                    var x = function RectangleArea(a,b) {
+                        y = a * b;
+                        console.log("The area is", y );
+                      }
+                      console.log(x(5,8));
+
+                      // returns --- The area is 40
+                </code>
+            </pre>
+        </div>
+        <div>
+            <h3>Arrow Functions</h3>
+            <p>
+                Arrow functions are just the shorter syntax for declaring a function.
+                This method includes a token " =>" which is known as the fat arrow to declare the functions.
+                There is no need for a function name, if using this method.<br>
+            </p>
+            <pre>
+                <code>
+                    var x = (a) => {
+                        y = a * a;
+                        console.log("The area is", y );
+                      }
+                      console.log(x(6));
+
+                      // returns --- The are is 36
+                </code>
+            </pre>
+        </div>
+
+        <div>
+            <h2>Other topics</h2>
+            <h3>Optional arguments</h3>
+            <p>
+                JavaScript ignores all the extra arguments which we pass through the function.
+                And if do not pass enough, then the missing values are undefined.
+                These undefined values are filled with default values.
+            </p>
+            <pre>
+                <code>
+                    function multiply(a, b=1) {
+                        return a * b
+                      }
+                      multiply(3)
+                      // returns -- 3
+                    
+                </code>
+            </pre>
+        </div>
+        <div>
+            <h3>Rest Parameters</h3> 
+            <p>
+                Rest parameter is an improved way to handle function parameter, allowing us to more easily handle various input as parameters in a function. 
+                The rest parameter syntax allows us to represent an indefinite number of arguments as an array.
+                When we use "...something" in a parameter, it gets bound to an array.
+                this means that we can get a list and keep on iterating it.
+                <br>
+            </p>
+            <pre>
+                <code>
+                    function add(...numbers) {
+                        let result = 0;
+                        for(let number of numbers)
+                        {
+                          result += number;
+                        }
+                        return result;
+                      }
+                      add(100,10,20,30);
+
+
+                      // returns 160
+
+                      
+                </code>
+            </pre>
+        </div>
+        <div>
+            <h3>Scope</h3>
+            <p>
+                JavaScript has two scopes – global and local. Any variable declared outside of a function belongs to the global scope, and is therefore accessible from anywhere in your code. 
+                Each function has its own scope, and any variable declared within that function is only accessible from that function and any nested functions.
+                <br>
+                <br>
+                Below is the example for scope.
+            </p>
+            <pre>
+                <code>
+                    let a = 5;
+                    function divide(b)
+                    {
+                     let a = 50;
+                     return a/b;
+
+                    }
+                    divide(10)
+
+                    // returns 5
+
+
+                    // consider the same example once again 
+
+
+                    let a = 5;
+                        function divide(b)
+                    {
+                     //let a = 50; (commenting this line to use the variable declared outside the function)
+                        return a/b;
+
+                        }
+                        divide(10)
+
+                        // returns 0.5
+                </code>
+            </pre>
+            <h3>Nested scope</h3>
+            <p>
+            Functions have their own scope and hence, the outer functions cannot access the variables in an inner function.
+            where as, the inner functions can access the variables in the outer function.<br>
+            </p>
+            <pre>
+                <code>
+                    function add(a,b)
+                    {
+                    function addition()
+                    {
+                    total = a+b;
+                    return total;
+                      }
+                    return addition()
+                    }
+                    add(80,20)
+
+                    // returns 100
+                </code>
+            </pre>
+        </div>
+
+        </div>
+        </body>
+        </html>
