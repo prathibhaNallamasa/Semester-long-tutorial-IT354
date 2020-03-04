@@ -1,0 +1,143 @@
+<!DOCTYPE html5>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+    
+</head>
+<body class="firstWebsite">
+    <div class="site-wrap">
+
+        <div class="site-mobile-menu site-navbar-target">
+          <div class="site-mobile-menu-header">
+            <div class="site-mobile-menu-close mt-3">
+              <span class="icon-close2 js-menu-toggle"></span>
+            </div>
+          </div>
+          <div class="site-mobile-menu-body"></div>
+        </div>
+        <header class="site-navbar py-4 js-sticky-header site-navbar-target" role="banner">
+
+            <div class="container-fluid">
+            <div class="row align-items-center justify-content-center">
+              
+                
+                  <nav class="site-navigation position-relative text-right" role="navigation">
+                    <h1 class="m-0 site-logo"><a href="index.html">Prathibha Nallamasa</a></h1>
+                  
+                    <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
+                      <li><a href="index.html" >Home</a></li>
+                      <li><a href="firstWebsite.html" >First Website</a></li>
+                      <li><a href="firstVideo.html" >First Video</a></li>
+                    
+                        <li><a href="secondWebsite.html" class="nav-link">Second Website</a></li>
+                        <li><a href="thirdWebsite.html" class="nav-link">Third Website</a></li>
+                        <li><a href="secondVideo.html" class="nav-link">Second Video</a></li>
+                        <li><a href="thirdVideo.html" class="nav-link">Third Video</a></li>
+                        <li><a href="Essays.html" class="nav-link">Essays</a></li>
+                      </ul>
+                    </nav>
+                  <div class="d-inline-block d-lg-none" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle float-right"><span class="icon-menu h3"></span></a></div>
+
+                </div>
+            </div>
+       
+        
+            
+        </header>
+        </div>
+        <div>
+            <h2>
+                Object creation
+            </h2>
+            <p>
+                There are 4 different types of object creations.
+                they are <br>
+                Object creation with new keyword<br>
+                object creation with literals<br>
+                object creation with constructors<br>
+                object creation with classes<br><br></p>
+                <h3>Object creation with new keyword</h3>
+                <p>
+                    In this type of object creation we create object with use of a new keyword<br>
+                    below is the example 
+                    <pre>
+                        <code>
+                            var person = new Object()
+                            person.firstName = "John";
+                            person.lastName = "Doe";
+                            person.age = 50;
+                            person.firstName + " is " + person.age + " years old." // returns John is 50 years old.
+                        </code>
+                    </pre>
+                </p>
+                <h3>object creation with literals</h3>
+                <p>
+                    In this we do not use any keywords.<br>
+                </p>
+                <pre>
+                    <code>
+                        var person = {
+                            firstName = "John",
+                           lastName = "Doe",
+                           age = 50};
+                            person.firstName + " is " + person.age + " years old." // returns John is 50 years old.
+                    </code>
+                </pre>
+                <h3>object creation with constructors</h3>
+                <p> In this type of creation we use the constructors.You can see the following example</p>
+                <pre>
+                    <code>
+                        function car(make,model,year)
+                        {
+                            this.make = make;
+                            this.model = model;
+                            this.year = year;
+                        }
+                        var mycar = new car('eagle','talon tsi',1993)
+                        mycar.make // returns eagle
+                    </code>
+                </pre>
+                <h3>object creation with classes</h3>
+                <p>
+                    In here we use classes and constructor for the class to create an object.
+                </p>
+                <pre>
+                    <code>
+                        class Rectangle
+                        {
+                            constructor(height,width)
+                            {
+                                this.height = height;
+                                this.width = width;
+                            }
+                            get area()
+                            {
+                                return this.calc();
+                            }
+                            calc()
+                            {
+                                return this.height * this.width;
+                            }
+                        }
+                        const square = new Rectangle(20,20);
+                        console.log(square.area) // returns 400
+                    </code>
+                </pre>
+            
+        </div>

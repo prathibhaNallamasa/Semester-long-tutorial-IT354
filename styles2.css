@@ -5,12 +5,11 @@ li {
     display: inline;
     padding-right: 0.9em;
     padding-left: 0.9em;
-    border-right: 1px solid #009;
+    
     text-decoration: none;
     position: relative;
     padding-left: 35px;
-    margin-bottom: 15px;
-    line-height: 1.5; 
+    
   }
  
          
@@ -84,9 +83,7 @@ a:hover {
     text-decoration: underline;
   }
   
-  a:active {
-    text-decoration: underline;
-  }
+  
   a:link {
     color: rgba(7, 83, 248, 0.658);
   }
