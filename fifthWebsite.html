@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <!doctype html>
+  <html lang="en">
+    <head>
+      
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      
+      <link href="https://fonts.googleapis.com/css?family=Arbutus+Slab|Open+Sans:300,400,700" rel="stylesheet">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  
+      <link rel="stylesheet" href="css/style.css">
+      
+    </head>
+    <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+    
+  
+  
+    <div class="site-wrap">
+  
+      <div class="site-mobile-menu site-navbar-target">
+        <div class="site-mobile-menu-header">
+          <div class="site-mobile-menu-close mt-3">
+            <span class="icon-close2 js-menu-toggle"></span>
+          </div>
+        </div>
+        <div class="site-mobile-menu-body"></div>
+      </div>
+     
+      <header class="site-navbar py-4 js-sticky-header site-navbar-target" role="banner">
+  
+        <div class="container-fluid">
+          <div class="row align-items-center justify-content-center">
+            
+            <div class="">
+              <nav class="site-navigation position-relative text-right" role="navigation">
+                <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
+                  <li><a href="index.html" class="nav-link">Home</a></li>
+                  <li><a href="Tutorial.html" class="nav-link">Tutorials</a></li>
+
+                </ul>
+              </nav>
+            </div>
+  
+            <div class=" text-center mx-5">
+              <h1 class="m-0 site-logo"><a href="index.html">Prathibha</a></h1>
+            </div>
+                  
+                  
+                
+  
+            <div class="text-left">
+  
+              <nav class="site-navigation position-relative" role="navigation">
+                <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
+                  <li><a href="Videos.html" class="nav-link">Videos</a></li>
+                  <li><a href="Essays.html" class="nav-link">Essays</a></li>
+                  
+                </ul>
+              </nav>
+  
+  
+              <div class="d-inline-block d-lg-none" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle float-right"><span class="icon-menu h3"></span></a></div>
+  
+            </div>
+  
+          </div>
+        </div>
+        
+      </header>
+  
+  
+      <div class="site-blocks-cover overlay bg-light" id="home-section">
+  
+        <div class="container">
+          <div class="row justify-content-center">
+  
+            <div class="col-md-12 mt-lg-5 text-left align-self-center text-intro">
+              <div class="row">
+                <div class="col-lg-6">
+                  <h1 class="text-black">The following the different tutorials on different topics</h1>
+                  
+                    <ul>
+                        <li><a href="firstWebsite.html" class="nav-link">Tutorial on Variables, Unary Operators and Hoisting</a></li>
+                        <li><a href="secondWebsite.html" class="nav-link">Tutorial on Functions and Other topics</a></li>
+                        <li><a href="thirdWebsite.html" class="nav-link">Tutorial on Objects</a></li>
+                        <li><a href="fourthWebsite.html" class="nav-link">Tutorial on Prototypal Inheritance</a></li>
+                        <li><a href="fifthWebsite.html" class="nav-link">Tutorial on Modules, Higher order functions, Advanced array methods</a></li>
+                        
+
+                    </ul>
+
+                  </p>
+                  
+  
+                </div>
+              </div>
+            </div>
+              <div>
+                  <h1>Modules</h1>
+                  <p>
+                      Modules are the set of functions you want to include in your application.<br><br>
+                      Modules can load each other and use special directives export and import to interchange functionality, call functions of one module from another one:<br>
+
+export keyword labels variables and functions that should be accessible from outside the current module.<br>
+import allows the import of functionality from other modules.<br><br>                  </p>
+                    <pre>
+                        <code>
+                            // in index.js 
+
+                            const circle = require('./circle');
+                            const r = 3;
+                          console.log(`Circle with radius ${r} has
+                         area: ${circle.area(r)};
+                         circumference: ${circle.circumference(r)}`);
+
+
+
+  // in circle.js 
+  
+  const PI = 3.14;
+exports.area = radius => (radius ** 2) * PI;
+exports.circumference = radius => 2 * radius * PI;
+                        </code>
+                    </pre>
+                    <h2>Why use Modules?</h2>
+                    <strong>Maintainability:</strong>
+                    <p>
+                        A well-designed module aims to lessen the dependencies on parts of the codebase as much as possible, 
+                        so that it can grow and improve independently.
+                        Updating a single module is much easier when the module is decoupled from other pieces of code.
+                    </p>
+                    <strong>Namespacing:</strong>
+                    <p>
+                        In JavaScript, variables outside the scope of a top-level function are global.
+                        Because of this, it’s common to have “namespace pollution”, 
+                        where completely unrelated code shares global variables.
+                        modules allow us to avoid namespace pollution by creating a private space for our variables.
+                    </p>
+                    <strong>Reusability:</strong>
+                    <p>
+                        The modules make the code easily available for the Reusability.
+                    </p><br><br>
+
+                    <h1> Higher order functions</h1>
+                    <p>
+                        A function that accepts and/or returns another function is called a higher-order function.<br>
+
+It’s higher-order because instead of strings, numbers, or booleans, it goes higher to operate on functions. Pretty meta.<br>
+
+With functions in JavaScript, you can: <br>
+<ul>
+    <li>Store them as variables</li>
+    <li>
+        Use them in arrays
+    </li>
+    <li>Assign them as object properties (methods)</li>
+    <li>
+        Pass them as arguments
+    </li>
+    <li>Return them from other functions</li>
+</ul>
+
+                    </p>
+                    <p>
+                        Below are two examples for higher-order functions: <br>
+                        <strong>Example 1:</strong>
+                        <pre>
+                            <code>
+                                //without higher order functions
+                                console.log("example without higher order function")
+                                const arr1 = [1, 2, 3];
+                                const arr2 = [];
+                                for(let i = 0; i < arr1.length; i++) {
+                                 arr2.push(arr1[i] * 2);
+                                    }
+                                // prints [ 2, 4, 6 ]
+                                console.log(arr2);
+
+                                
+                                // with higher order functions
+                                console.log("example with higher order function")
+                                const arr1 = [1, 2, 3];
+                                const arr2 = arr1.map(function(item) {
+                                  return item * 2;
+                                });
+                                console.log(arr2);
+                            </code>
+                        </pre>
+                        <strong>Example 2:
+                        </strong>
+                        <pre>
+                            <code>
+                                //without higher order functions
+                                console.log("example without higher order function")
+                                const birthYear = [1975, 1997, 2002, 1995, 1985];
+                                const ages = [];
+                                for(let i = 0; i < birthYear.length; i++) {
+                                let age = 2018 - birthYear[i];
+                                ages.push(age);
+                                }
+                                // prints [ 43, 21, 16, 23, 33 ]
+                                console.log(ages);
+
+                                //with higher order function
+                                console.log("example with higher order function")
+                                const birthYear = [1975, 1997, 2002, 1995, 1985];
+                                const ages = birthYear.map(year => 2018 - year);
+                                // prints [ 43, 21, 16, 23, 33 ]
+                                console.log(ages);
+                            </code>
+                        </pre>
+                    </p>
+                    <h1>Advanced array functions</h1>
+                    <h2>Pop() function</h2>
+                    <p>
+                        pop()
+                            : Remove an item from the end of an array
+                            <pre>
+                                <code>
+                                    // pop() function
+                                    console.log(" pop function");
+                                    var fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+                                    console.log("after pop function");
+                                    fruits.pop();
+                                    fruits
+                                </code>
+                            </pre>  
+                    </p>
+                    <h2>push() function</h2>
+                    <p>
+                        push()
+: Add items to the end of an array
+                                    <pre>
+                                        <code>
+                                    //push()
+                                    console.log("push function");
+                                    let cats = ['Bob'];
+
+                                    cats.push('Willy'); 
+
+                                    cats.push('Puff', 'George');
+                                    cats
+                                        </code>
+                                    </pre>
+                    </p>
+                    <h2>Shift() function:</h2>
+                    <p>
+                        shift()
+: Remove an item from the beginning of an array
+                        <pre>
+                            <code>
+                                //shift()
+                                console.log("shift function");
+                                let cats = ['Bob', 'Willy', 'Mini'];
+
+                                cats.shift();
+                                cats
+                            </code>
+                        </pre>
+                    </p>
+                    <h2>Unshift() function: </h2>
+                    <p>unshift()
+                        : Add items to the beginning of an array</p>
+                        <pre>
+                            <code>
+                                //unshift()
+                                console.log("unshift function");
+                                let cats = ['Bob'];
+
+                                cats.unshift('Willy'); 
+
+                                cats.unshift('Puff', 'George');
+                                cats
+                            </code>
+                        </pre>
+                        <h2>Find() function: </h2>
+                        <p>
+                            The JavaScript Array.find method is a convenient way to find and return the
+                             first occurence of an element in an array, under a defined testing function.
+                             <pre>
+                                 <code>
+                                    //find()
+                                    console.log("find function");
+                                    const trees = [ 
+                                      "birch", 
+                                      "maple", 
+                                      "oak", 
+                                      "poplar" 
+                                    ];
+                                    
+                                    const result = trees.find(tree => tree.startsWith("m"));
+                                    result
+                                 </code>
+                             </pre>
+                        </p>
+                        <h2>filter() function: </h2>
+                        <p>
+                            filter() creates a new array with elements that fall under a given criteria 
+                            from an existing array
+                            <pre>
+                                <code>
+                                    
+                                            //filter()
+
+                                            var numbers = [1, 3, 6, 8, 11];
+                                            console.log("filter function");
+                                            var lucky = numbers.filter(function(number) {
+                                            return number > 7;
+                                            });
+                                            lucky
+                                </code>
+                            </pre>
+                        </p>
+                        <h2>FindIndex() method:
+
+                        </h2>
+                        <p>
+                            The findIndex() method returns the index 
+                            of the element that satisfies a testing function or -1 if no element passed the test.
+                            <pre>
+                                <code>
+                                    //findIndex()
+                                    console.log("findIndex function");
+                                    let ranks = [1, 5, 7, 8, 10, 7];
+                                    let index = ranks.findIndex(rank => rank === 7);
+                                    console.log(index);
+                                </code>
+                            </pre>
+                        </p>
+                        <h2>ForEach() method:</h2>
+                        <p>
+                            JavaScript Array provides the forEach() method that allows you to run a function on every element.
+                            <pre>
+                                <code>
+                                    //forEach()
+                                    console.log("forEach function");
+                                    let ranks = ['A', 'B', 'C'];
+
+                                    ranks.forEach(function (e) {
+                                        console.log(e);
+                                    });
+                                </code>
+                            </pre>
+                        </p>
+              </div>
+          </div>
+        </div>
