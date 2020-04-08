@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <!doctype html>
+  <html lang="en">
+    <head>
+      
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      
+      <link href="https://fonts.googleapis.com/css?family=Arbutus+Slab|Open+Sans:300,400,700" rel="stylesheet">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  
+      <link rel="stylesheet" href="css/style.css">
+      
+    </head>
+    <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+    
+  
+  
+    <div class="site-wrap">
+  
+      <div class="site-mobile-menu site-navbar-target">
+        <div class="site-mobile-menu-header">
+          <div class="site-mobile-menu-close mt-3">
+            <span class="icon-close2 js-menu-toggle"></span>
+          </div>
+        </div>
+        <div class="site-mobile-menu-body"></div>
+      </div>
+     
+      <header class="site-navbar py-4 js-sticky-header site-navbar-target" role="banner">
+  
+        <div class="container-fluid">
+          <div class="row align-items-center justify-content-center">
+            
+            <div class="">
+              <nav class="site-navigation position-relative text-right" role="navigation">
+                <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
+                  <li><a href="index.html" class="nav-link">Home</a></li>
+                  <li><a href="Tutorial.html" class="nav-link">Tutorials</a></li>
+
+                </ul>
+              </nav>
+            </div>
+  
+            <div class=" text-center mx-5">
+              <h1 class="m-0 site-logo"><a href="index.html">Prathibha</a></h1>
+            </div>
+                  
+                  
+                
+  
+            <div class="text-left">
+  
+              <nav class="site-navigation position-relative" role="navigation">
+                <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
+                  <li><a href="Videos.html" class="nav-link">Videos</a></li>
+                  <li><a href="Essays.html" class="nav-link">Essays</a></li>
+                  
+                </ul>
+              </nav>
+  
+  
+              <div class="d-inline-block d-lg-none" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle float-right"><span class="icon-menu h3"></span></a></div>
+  
+            </div>
+  
+          </div>
+        </div>
+        
+      </header>
+  
+  
+      <div class="site-blocks-cover overlay bg-light" id="home-section">
+  
+        <div class="container">
+          <div class="row justify-content-center">
+  
+            <div class="col-md-12 mt-lg-5 text-left align-self-center text-intro">
+              <div class="row">
+                <div class="col-lg-6">
+                  <div>
+                    <p>
+                        The following are the essays that I worked on during this semester.
+                    </p>
+                    <ul>
+                        <li>
+                            <a href="ECMAscript.html">ECMAscript</a><br><br>
+                        </li>
+                        <li>
+                            <a href ="3-1Essay.html">Build a responsive website with HTML and CSS</a><br><br>
+                        </li>
+                        <li>
+                            <a href ="3-2Essay.html">Common mistakes in usability</a><br><br>
+                        </li>
+                        <li>
+                            <a href ="3-3Essay.html">Common Usability issues to be aware of</a><br><br>
+                        </li>
+                        <li>
+                            <a href ="3-4Essay.html">Principles of good website usability</a><br><br>
+                        </li>
+                        <li>
+                          <a href ="fourthEssay.html">Monolith vs Microservices</a><br><br>
+                      </li>
+                      <li>
+                        <a href ="fifthEssay.html">The Mitt Romney WebFont Problem</a><br><br>
+                    </li>
+                    </ul>
+                </div>
+                  
+  
+                </div>
+              </div>
+            </div>
+            <div>
+                <h1>The Mitt Romney Web Font Problem</h1>
+                <h2>
+                    The problem:
+                </h2>
+                <p>
+                    The problem discussed in this article is a variant of The Flash of Invisible Text (FOIT),
+                    This specific problem occurs when you use multiple weights and styles of the same typeface together.
+                    <br>In January, James Muspratt tweeted the following image:<br><br>
+                    <img src="images/foit1.jpg" alt="Image"><br><br>
+
+                    The headline was rendered using the Apres Titling Gothing FB typeface but using two different web fonts, 
+                    one for bold and one for combination bold and italic. <br>
+                    The message should actually look like,
+                    <br><br>
+                    <img src="images/foit2.jpg" alt="Image"><br><br>
+                    Each web font incurs its own separate FOIT. By combining two web fonts together in a single headline,
+                     the FOIT has created a race condition that alters the integrity of the content. 
+                     A glance at the headline indicates that Mitt Romney is indeed running for President. 
+                     When the page finishes loading, the real message is revealed: he is, in fact, not running for President.
+                <br><br>
+
+                </p><br><br>
+                <p>
+                    The avoid problem we can group our font loads into a single repaint, shown below code:
+                    <br>
+                    <pre>
+                        <code>
+                            .raleway-loading body {
+                                color: transparent;
+                            }
+                            .raleway-fallback body,
+                            .raleway-loaded body {
+                                color: inherit;
+                            }
+                            .raleway-fallback body {
+                                font-family: serif;
+                            }
+                            .raleway-loaded body {
+                                font-family: Raleway, serif;
+                            }
+                        </code>
+                    </pre>
+                </p><br><br>
+                <strong>Sources: </strong>https://www.zachleat.com/web/mitt-romney-webfont-problem/<br><br>
+            </div>
+          </div>
+        </div>
+  
+        
+      
+      </div>  
+<br><br><br><br>
+      <footer class="site-section bg-light footer">
+        <div class="container">
+          <div class="row mb-5">
+            
+            <div class="col-md-5 mx-auto">
+              <div class="row">
+                <div class="col-lg-4">
+                  
+                  <ul class="list-unstyled">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                  <li><a href="Tutorial.html" class="nav-link">Tutorials</a></li>
+                  </ul>
+                </div>
+                <div class="col-lg-4">
+                 
+                  <ul class="list-unstyled">
+                    <li><a href="Videos.html" class="nav-link">Videos</a></li>
+                  <li><a href="Essays.html" class="nav-link">Essays</a></li>
+                  </ul>
+                </div>
+                
+              </div>
+            </div>
+            <div class="col-md-3">
+              <h3 class="footer-title">Follow Me</h3>
+              <a href="#" class="social-circle"><span class="icon-twitter"></span></a>
+              <a href="#" class="social-circle"><span class="icon-facebook"></span></a>
+              <a href="#" class="social-circle"><span class="icon-instagram"></span></a>
+              <a href="#" class="social-circle"><span class="icon-dribbble"></span></a>
+              <a href="#" class="social-circle"><span class="icon-linkedin"></span></a>
+            </div>
+          </div>
+  
+          <div class="row">
+            <div class="col-12 text-center">
+            <p>
+              Copyright@ Prathibha Nallamasa 2020 | All rights reserved
+              </p>
+              </div>
+          </div>
+        </div>
+      </footer>
+      </div>
+      </body>
+      </html>
