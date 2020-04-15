@@ -113,6 +113,9 @@
                       <li>
                         <a href ="fifthEssay.html">The Mitt Romney WebFont Problem</a><br><br>
                     </li>
+                    <li>
+                      <a href ="sixthEssay.html">Node and V8 Engine</a><br><br>
+                  </li>
                     </ul>
                 </div>
                   
@@ -126,43 +129,36 @@
                     The problem:
                 </h2>
                 <p>
-                    The problem discussed in this article is a variant of The Flash of Invisible Text (FOIT),
+                    The problem discussed in this article is browser hiding text while the web font was still loading.
                     This specific problem occurs when you use multiple weights and styles of the same typeface together.
-                    <br>In January, James Muspratt tweeted the following image:<br><br>
+                    <br><br>
                     <img src="images/foit1.jpg" alt="Image"><br><br>
+                    This is how the message looked without the fonts being loaded correctly.
+                    This caused a major problem with readers who would just skim the content and thought that he was running foer the President.
+                    But in reality, it was not the case.
+                    The message was not loaded properly and due to this there were many misunderstanding regarding the news.
+                    The problem was mainly caused because the web fonts were loading slower than the web page and hence there is some missing information if we use web fonts to 
+                    higlight anything.
 
-                    The headline was rendered using the Apres Titling Gothing FB typeface but using two different web fonts, 
-                    one for bold and one for combination bold and italic. <br>
-                    The message should actually look like,
+                    
                     <br><br>
                     <img src="images/foit2.jpg" alt="Image"><br><br>
-                    Each web font incurs its own separate FOIT. By combining two web fonts together in a single headline,
-                     the FOIT has created a race condition that alters the integrity of the content. 
-                     A glance at the headline indicates that Mitt Romney is indeed running for President. 
-                     When the page finishes loading, the real message is revealed: he is, in fact, not running for President.
+                    This is how actually the news should look.<br>
+
+                    Each web font has its own separate FOIT. By combining two web fonts together in a single line,
+                     the FOIT has created this problem. 
+                    
                 <br><br>
 
                 </p><br><br>
                 <p>
-                    The avoid problem we can group our font loads into a single repaint, shown below code:
+                    The avoid problem the article states few ways:
                     <br>
-                    <pre>
-                        <code>
-                            .raleway-loading body {
-                                color: transparent;
-                            }
-                            .raleway-fallback body,
-                            .raleway-loaded body {
-                                color: inherit;
-                            }
-                            .raleway-fallback body {
-                                font-family: serif;
-                            }
-                            .raleway-loaded body {
-                                font-family: Raleway, serif;
-                            }
-                        </code>
-                    </pre>
+                    The problem can be eliminated by using the font loading solution prescribed by the author in the <a href="https://dev.opera.com/articles/better-font-face/">Dev.Opera</a>, which 
+                    is the easiest method to eliminate the FOIT by switching to Unstyled fallback text while the web page is still loading.
+                    <br>
+                    Also by using the approch documented in the<a href = "https://www.zachleat.com/web/foft/">Flash of Faux Text</a> which uses  font-synthesis to show browser generated bold and italic fallbacks while the real web fonts load.
+                    
                 </p><br><br>
                 <strong>Sources: </strong>https://www.zachleat.com/web/mitt-romney-webfont-problem/<br><br>
             </div>
@@ -196,14 +192,7 @@
                 
               </div>
             </div>
-            <div class="col-md-3">
-              <h3 class="footer-title">Follow Me</h3>
-              <a href="#" class="social-circle"><span class="icon-twitter"></span></a>
-              <a href="#" class="social-circle"><span class="icon-facebook"></span></a>
-              <a href="#" class="social-circle"><span class="icon-instagram"></span></a>
-              <a href="#" class="social-circle"><span class="icon-dribbble"></span></a>
-              <a href="#" class="social-circle"><span class="icon-linkedin"></span></a>
-            </div>
+           
           </div>
   
           <div class="row">
